@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+     padding-top: 4px;
+  }
+  
+  @media (min-width: 992px) { 
+    body {
+     padding-top: 6px;
+    }
+  }
+
+
+  /*
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aea' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aea' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+} */
+
+.img_produits{
+  padding: 10px;
+  width: 286px;
+  height: 180px; 
+}
+
+
+
+
+// Option A: Include all of Bootstrap
+
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+
+$body-bg : #ffffff;
+$body-color:  #0c0101;
+
+
+
+$theme-colors: (
+  "custom-color": #900,
+  "primary": #1976D2,    // style="background-color: #0D47A1;"
+  "text-primary" : #0EA222,
+  "dark" : #212121
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline:  #007bff;
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  background-image: none;
+}
+/*
+.carousel-control-next-icon:after
+{
+ 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aea' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  font-size: 25px;
+  color: #ffffff;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon
+{
+  position: relative;
+}
+*/ 
+
+.carousel-control-next-icon:before
+{
+ font-family: roboto,FontAwesome;
+ content: "\f054";
+  background-image: none;
+  font-size: 35px;
+  color: #007bff;
+  font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    
+}
+
+
+.carousel-control-prev-icon:after {
+ /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aea' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); */
+ font-family: FontAwesome;
+ content: "\f053";
+ background-image: none;
+  font-size: 35px;
+  color: #007bff;
+  font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.carousel-indicators li.active {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+  .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #007bff;
+  }
+  
+  a,ul.flex-column li a{
+    color:#ffffff;
+  }
+  .card ul.flex-column li a{
+    color:blue;
+  }
+  .card a{
+    color: blue;
+  }
+ 
+  .cardInMenu{
+    border-radius: 5px;
+    min-block-size: 25px;
+  }
+  .imgSocialMedia{
+    max-width: 25px;
+}
+#headerNav a{
+ color: #007bff;
+}
