@@ -2,9 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "backend nodejs for all app",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js  exec babel-node --presets env" ,
+    "start": "nodemon server.js  exec babel-node --presets env" ,
     "test": "test",
     "build":"babel src -d dist source-maps",
     "server": "node dist/server.js" 
